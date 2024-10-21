@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- left part -->
+        <div class="left-section">
+            <img id="change1" src="./images/left-bg.jpg" alt="">
+            <img id="change2" style="opacity: 0;" src="./images/bg4.svg" alt="">
+            <img id="change3" style="opacity: 0;" src="./images/bg5.svg" alt="">
+        </div>
+        <div class="navigation-dot">
+            <span id="dot1" class="dot" onclick="slider()"></span>
+            <span id="dot2" class="dot" onclick="slider1()"></span>
+            <span id="dot3" class="dot" onclick="slider2()"></span>
+        </div>
+
+
+        <!-- right part -->
+        <div class="right-section">
+            <div class="logos">
+                <img id="logos-img1" src="./images/logo1.svg" alt="">
+                <img id="logos-img2" src="./images/logo2.svg" alt="">
+            </div>
+            <form action="./action.php" class="right-content">
+                <div class="login">
+                    <label for="office">Log in</label>
+                    <select name="office" id="office">
+                        <option value="">office 1</option>
+                        <option value="">office 2</option>
+                        <option value="">office 3</option>
+                        <option value="">office 4</option>
+                        <option value="">office 5</option>
+                        <option value="">office 6</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="user-id" class="input-field" type="text" placeholder="User Id">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div>
+                    <input id="password" class="input-field" type="password" placeholder="Password">
+                    <i class="fa-regular fa-eye-slash"></i>
+                </div>
+                <a href="#"><div class="forgot-password">Forgot your password?</div></a>
+                <input class="login-btn" type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
